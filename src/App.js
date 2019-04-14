@@ -1,25 +1,25 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      buttons: null
+    }
+  }
+
+  componentWillMount() {
+    let data = require('./assets/1athletes.json');
+    console.log(data);
+  }
+
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <img src={require('./assets/logo-sm.png')} alt='logo-sm' id='logo-sm' />
+        <p className='text'>SELECT ACCOMPLISHMENT</p>
+        {this.state.buttons}
       </div>
     );
   }
