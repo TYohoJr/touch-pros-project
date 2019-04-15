@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { Button } from 'reactstrap';
 
-class App extends Component {
+export default class App extends Component {
   constructor() {
     super();
     this.state = {
@@ -12,7 +12,6 @@ class App extends Component {
 
   componentWillMount() {
     let data = require('./assets/1athletes.json');
-    console.log(data);
     this.setState({
       buttons: data[0].Sports.map((item, i) => {
         return <Button key={i} className='sport-data-title-btn' onClick={() => console.log(item.SportData.Title)}>{item.SportData.Title.toUpperCase()}</Button>
@@ -36,5 +35,3 @@ class App extends Component {
     );
   }
 }
-
-export default App;
