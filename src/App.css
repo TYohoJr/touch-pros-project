@@ -9,7 +9,8 @@
 }
 
 #header-text {
-  font-size: 50px
+  font-size: 46px;
+  text-shadow: 0px 8px 6px #171717;
 }
 
 .sport-data-title-btn {
@@ -20,6 +21,7 @@
   background-color:#ffd200!important;
   font-size: 30px!important;
   font-weight: 900!important;
+  border-radius: 0!important;
 }
 
 #btns-container {
@@ -37,6 +39,7 @@ footer {
 
 #footer-text-divider {
   color: white;
+  margin: 15px;
 }
 
 #footer-touchpros {

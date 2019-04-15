@@ -28,7 +28,7 @@ export default class App extends Component {
           {this.state.buttons}
         </div>
         <footer>
-          <div className='text' id='footer-page-navigation'>HOME <span id='footer-text-divider'>></span> WRESTLERS</div>
+          <div className='text' id='footer-page-navigation'>HOME <span id='footer-text-divider'>></span>WRESTLERS</div>
           <div id='footer-touchpros'>TouchWall by TouchPros.com</div>
         </footer>
       </div>
