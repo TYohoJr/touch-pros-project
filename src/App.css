@@ -1,8 +1,62 @@
 .App {
   text-align: center;
+  min-height: 100vh;
 }
 
 .text {
-  color: yellow;
-  
+  color: #ffd200;
+  font-weight: 900;
+}
+
+#header-text {
+  font-size: 50px
+}
+
+.sport-data-title-btn {
+  color: black!important;
+  height: 128px;
+  width: 509px;
+  margin: 40px;
+  background-color:#ffd200!important;
+  font-size: 30px!important;
+  font-weight: 900!important;
+}
+
+#btns-container {
+  margin-top: 70px;
+}
+
+footer {
+  background-color: black;
+  height:70px;
+  position: fixed;
+  bottom: 0;
+  width:100%;
+  border-top: #ffd200 2px solid;
+}
+
+#footer-text-divider {
+  color: white;
+}
+
+#footer-touchpros {
+  float: right;
+  color: white;
+  font-weight: 900;
+  line-height: 70px;
+  margin-right: 15px;
+  font-size: 20px;
+}
+
+#logo-sm {
+  margin-top:40px!important;
+  margin-bottom: 100px!important;
+  margin: 0 auto
+}
+
+#footer-page-navigation {
+  font-size: 24px;
+  display: inline-block;
+  line-height: 70px;
+  margin-left: 300px;
 }
