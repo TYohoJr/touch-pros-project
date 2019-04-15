@@ -7,8 +7,10 @@ export default class App extends Component {
     super();
     this.goToHome = this.goToHome.bind(this);
     this.goToWrestlers = this.goToWrestlers.bind(this);
+    this.goToAccomplishment = this.goToAccomplishment.bind(this);
     this.state = {
-      buttons: null
+      buttons: null,
+      data: null
     }
   }
 
@@ -20,12 +22,19 @@ export default class App extends Component {
     console.log(e.target.innerHTML);
   }
 
+  goToAccomplishment(e) {
+    console.log(e.target.innerHTML)
+  }
+
+  // Map the array of button titles from the local JOSN file into bootstrap buttons when the component mounts
   componentWillMount() {
     let data = require('./assets/1athletes.json');
     this.setState({
       buttons: data[0].Sports.map((item, i) => {
-        return <Button key={i} className='sport-data-title-btn' onClick={() => console.log(item.SportData.Title)}>{item.SportData.Title.toUpperCase()}</Button>
-      })
+        return <Button key={i} className='sport-data-title-btn' onClick={this.goToAccomplishment}>{item.SportData.Title.toUpperCase()}</Button>
+      }),
+      // Load the JSON object into the component state for faster access in case more API info is needed
+      data
     })
   }
 
