@@ -5,9 +5,19 @@ import { Button } from 'reactstrap';
 export default class App extends Component {
   constructor() {
     super();
+    this.goToHome = this.goToHome.bind(this);
+    this.goToWrestlers = this.goToWrestlers.bind(this);
     this.state = {
       buttons: null
     }
+  }
+
+  goToHome(e) {
+    console.log(e.target.innerHTML);
+  }
+
+  goToWrestlers(e) {
+    console.log(e.target.innerHTML);
   }
 
   componentWillMount() {
@@ -28,7 +38,11 @@ export default class App extends Component {
           {this.state.buttons}
         </div>
         <footer>
-          <div className='text' id='footer-page-navigation'>HOME <span id='footer-text-divider'>></span>WRESTLERS</div>
+          <div className='text' id='footer-page-navigation'>
+            <span onClick={this.goToHome}>HOME</span>
+            <span id='footer-text-divider'>></span>
+            <span onClick={this.goToWrestlers}>WRESTLERS</span>
+          </div>
           <div id='footer-touchpros'>TouchWall by TouchPros.com</div>
         </footer>
       </div>
