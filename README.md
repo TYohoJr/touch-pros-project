@@ -1,5 +1,5 @@
 # TouchPros Project
-TouchPros Project is a simple rendering of an HTML page version of a TouchWall screen. Features Buttons accessed from a local JSON file. This is the front-end code. The back-end can be found at [TouchPros Project Server](https://github.com/TYohoJr/touch-pros-project-server).
+TouchPros Project is a simple rendering of an HTML page version of a TouchWall screen. Features Buttons accessed from a local JSON file. The app is loaded though src/index.js and the bulk of the code lives in src/App.js. The This is the front-end code. The back-end can be found at [TouchPros Project Server](https://github.com/TYohoJr/touch-pros-project-server).
 
 ## Features
 * HTML page with basic layout of a TouchWall screen
