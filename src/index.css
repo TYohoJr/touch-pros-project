@@ -4,13 +4,10 @@
 }
 
 body {
-  margin: 0;
   background-image: url('./assets/background.jpg'), linear-gradient(black, grey, black);
-  background-size: cover;
-  background-position: center; 
-  padding: 0;
   font-family: 'museo-slab'!important;
   font-style: normal!important;
-  font-weight: 900!important;
+  /*font-weight does't work here since it is an imported font-family, and MuseoSlab 900 is not free :/*/
+  font-weight: 900;
 }
 
